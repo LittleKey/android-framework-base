@@ -1,8 +1,3 @@
 <resources>
     <string name="app_name">base</string>
-
-    <string name="ranking_list">排行榜</string>
-    
-    <string name="zone_ranking">赛区排行</string>
-    <string name="china_ranking">全国排行</string>
 </resources>
