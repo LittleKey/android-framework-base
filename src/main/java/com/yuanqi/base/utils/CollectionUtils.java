@@ -1,5 +1,6 @@
 package com.yuanqi.base.utils;
 
+import java.util.ArrayList;
 import java.util.Collection;
 
 /**
@@ -22,5 +23,21 @@ public class CollectionUtils {
     if (items != null) {
       collection.addAll(items);
     }
+  }
+
+  public static <T> Collection<T> filter(Collection<T> collection, FilterCallback<T> callback){
+    Collection<T> newCol = new ArrayList<>();
+    if (callback != null) {
+      for (T item : collection) {
+        if (callback.onFilter(item)) {
+          add(newCol, item);
+        }
+      }
+    }
+    return newCol;
+  }
+
+  public interface FilterCallback<T> {
+    boolean onFilter(T item);
   }
 }
