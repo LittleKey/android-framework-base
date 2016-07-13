@@ -327,7 +327,7 @@ public class DeviceConfig {
     try {
       PackageManager var2 = var0.getPackageManager();
       ApplicationInfo var3 = var2.getApplicationInfo(var0.getPackageName(), PackageManager.GET_META_DATA);
-      if (var3 != null) {
+      if (var3 != null && var3.metaData != null) {
         String var4 = var3.metaData.getString(var1);
         if (var4 != null) {
           return var4.trim();
