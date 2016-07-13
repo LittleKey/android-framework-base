@@ -326,7 +326,7 @@ public class DeviceConfig {
   public static String getMetaData(Context var0, String var1) {
     try {
       PackageManager var2 = var0.getPackageManager();
-      ApplicationInfo var3 = var2.getApplicationInfo(var0.getPackageName(), 128);
+      ApplicationInfo var3 = var2.getApplicationInfo(var0.getPackageName(), PackageManager.GET_META_DATA);
       if (var3 != null) {
         String var4 = var3.metaData.getString(var1);
         if (var4 != null) {
@@ -457,7 +457,7 @@ public class DeviceConfig {
    * @param context
    * @return
    */
-  public static String getApplicationLable(Context context) {
+  public static String getApplicationLabel(Context context) {
     return context.getPackageManager().getApplicationLabel(context.getApplicationInfo()).toString();
   }
 
