@@ -1,4 +1,4 @@
-package com.yuanqi.base.utils;
+package me.littlekey.base.utils;
 
 import java.util.ArrayList;
 import java.util.Collection;

@@ -1,4 +1,4 @@
-package com.yuanqi.base;
+package me.littlekey.base;
 
 /**
  * Created by nengxiangzhou on 15/9/16.

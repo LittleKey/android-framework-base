@@ -1,4 +1,4 @@
-package com.yuanqi.base;
+package me.littlekey.base;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

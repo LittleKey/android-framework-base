@@ -1,4 +1,4 @@
-package com.yuanqi.base.utils;
+package me.littlekey.base.utils;
 
 import android.Manifest;
 import android.content.Context;
